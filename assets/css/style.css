@@ -1,0 +1,46 @@
+/* Global */
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+/* font-family: "Epilogue", sans-serif; */
+
+* {
+	box-sizing: border-box;
+	font-family: "Epilogue", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	min-width: 375px;
+}
+
+:root {
+	/*Spacers*/
+	--tinySpacer: 5px;
+	--smallSpacer: 25px;
+	--mediumSpacer: 50px;
+	--largeSpacer: 75px;
+	--hugeSpacer: 100px;
+	/*Farver*/
+	--colorDeepForest: #2E4600; /* Mørk grøn */
+	--colorFernLeaf: #588C42; /* Midt grøn */
+	--colorFreshMint: #82B56D; /* Lys grøn */
+	--colorClearSky: #87CEEB; /* Lys blå */
+	--colorPaleStone: #F5F1E4; /* Sten grå */
+}
+
+/* Velkommen */
+/* Nyheder */
+/* Klub Aktiviteter */
+/* -- Træningsløb */
+/* -- Voksne/familier */
+/* -- Børn/unge */
+/* -- RSOK’kerne */
+/* -- Om O-kort */
+/* Praktisk Info */
+/* -- Kontakt */
+/* Indmeldelse */
+/* -- Nyt Medlem */
+/* -- Kontingent */
+/* Links */
