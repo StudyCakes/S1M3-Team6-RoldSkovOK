@@ -1,8 +1,6 @@
 /* Global */
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 /* font-family: "Epilogue", sans-serif; */
 
 * {
@@ -23,11 +21,16 @@ html {
 	--largeSpacer: 75px;
 	--hugeSpacer: 100px;
 	/*Farver*/
-	--colorDeepForest: #2E4600; /* Mørk grøn */
-	--colorFernLeaf: #588C42; /* Midt grøn */
-	--colorFreshMint: #82B56D; /* Lys grøn */
-	--colorClearSky: #87CEEB; /* Lys blå */
-	--colorPaleStone: #F5F1E4; /* Sten grå */
+	--colorDeepForest: #2e4600; /* Mørk grøn */
+	--colorFernLeaf: #588c42; /* Midt grøn */
+	--colorFreshMint: #82b56d; /* Lys grøn */
+	--colorClearSky: #87ceeb; /* Lys blå */
+	--colorPaleStone: #f5f1e4; /* Sten grå */
+}
+
+.base {
+	max-width: 1280px;
+	justify-self: center;
 }
 
 /* Velkommen */
@@ -44,3 +47,7 @@ html {
 /* -- Nyt Medlem */
 /* -- Kontingent */
 /* Links */
+
+/* Media */
+@media screen and (min-width: 1281px) {
+}
