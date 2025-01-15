@@ -45,7 +45,7 @@ html {
 }
 
 .headerfull {
-	height: 200px;
+	height: 150px;
 	width: 100%;
 	background-image: url("../images/header/banner11.jpg");
 	background-size: cover;
@@ -112,7 +112,7 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--colorFreshMint);
+	background-color: var(--colorFernLeaf);
 	margin-bottom: var(--mediumSpacer);
 }
 
@@ -137,7 +137,6 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: var(--smallSpacer);
 	padding-top: var(--mediumSpacer);
 	margin: var(--mediumSpacer) 0;
 }
@@ -151,6 +150,22 @@ html {
 .velkommenBlock2Sub li {
 	margin: var(--tinySpacer);
 	max-width: 24ch;
+}
+
+.velkommenBlock3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: var(--mediumSpacer) 0;
+}
+
+.velkommenBlock3Sub {
+	margin: var(--smallSpacer);
+}
+
+.velkommenBlock3Sub li {
+	margin: var(--tinySpacer);
+	max-width: 48ch;
 }
 
 /* Nyheder */
