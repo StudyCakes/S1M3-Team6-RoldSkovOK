@@ -35,6 +35,95 @@ html {
 	background-color: var(--colorPaleStone);
 }
 
+/* Velkommen */
+
+.velkommenHeader {
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--colorFernLeaf);
+	margin-bottom: var(--mediumSpacer);
+}
+
+.velkommenBlock1 {
+	width: 100%;
+	padding: 0 var(--hugeSpacer);
+}
+
+.velkommenBlock1Sub {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: var(--smallSpacer) 0;
+}
+
+.velkommenBlock1Sub p {
+	max-width: 60ch;
+	margin-bottom: var(--smallSpacer);
+}
+
+.velkommenBlock2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--smallSpacer) 0;
+	margin: var(--smallSpacer) 0;
+	margin-bottom: var(--mediumSpacer);
+}
+
+.velkommenBlock2Sub {
+	justify-content: space-evenly;
+}
+
+.velkommenBlock2Sub li {
+	margin: var(--tinySpacer);
+	max-width: 24ch;
+}
+
+.velkommenBlock3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: var(--smallSpacer);
+}
+
+.velkommenBlock3Sub1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: var(--smallSpacer);
+	padding-top: var(--smallSpacer);
+}
+
+.velkommenBlock3Sub2 {
+	margin: var(--smallSpacer);
+}
+
+.velkommenBlock3Sub2 li {
+	margin: var(--tinySpacer);
+	max-width: 48ch;
+}
+
+/* Nyheder */
+/* Klub Aktiviteter */
+/* -- Træningsløb */
+/* -- Voksne/familier */
+/* -- Børn/unge */
+/* -- RSOK’kerne */
+/* -- Om O-kort */
+/* Praktisk Info */
+/* -- Kontakt */
+/* Indmeldelse */
+/* Links */
+
 /* Header */
 
 .headersticky {
@@ -61,30 +150,94 @@ html {
 	height: 100px;
 }
 
-.headerfull div {
+.headerMobNav {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+#headerMobNavButton {
+	display: none;
+}
+
+.headerMobNav > a {
+	font-size: 1.25rem;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	margin: -2px var(--tinySpacer);
+	padding: var(--tinySpacer);
+	padding-top: 12px;
+	border-radius: var(--smallSpacer);
+	background-color: var(--colorFernLeaf);
+}
+
+.headerMobNav > a:hover {
+	background-color: var(--colorClearSky);
+}
+
+.headerMobNavMenu {
+	padding: var(--tinySpacer);
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.headerMobNavDropper {
+	display: none;
+}
+
+.headerMobNavDropper a {
+	display: block;
+	color: black;
+	font-size: 1rem;
+	text-align: right;
+	text-decoration: none;
+	padding: var(--tinySpacer) 10px;
+}
+
+.headerMobNavDropper a:hover {
+	background-color: var(--colorClearSky);
+	border-radius: var(--tinySpacer);
+}
+
+#headerMobNavButton:checked ~ .headerMobNavDropper {
+	position: absolute;
+	top: 80px;
+	right: 5px;
+	min-width: 8rem;
+	background-color: white;
+	border: var(--tinySpacer) solid white;
+	border-radius: var(--tinySpacer);
+	box-shadow: 0 0.5rem 1rem black;
+	z-index: 10;
+	display: block;
+}
+
+.headerDeskNav {
 	height: 2.5rem;
 	padding: 0 var(--microSpacer);
 	margin: var(--smallSpacer) 0 var(--largeSpacer);
 	border-radius: var(--smallSpacer);
 	background-color: var(--colorPaleStone);
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.headerfull div a {
-	font-size: 0.9rem;
+.headerDeskNav a {
 	color: black;
-	max-width: 15ch;
-	min-width: 13ch;
+	min-width: 7 ch;
 	text-align: center;
 	text-decoration: none;
 	padding: var(--tinySpacer);
 	border-radius: var(--smallSpacer);
 }
 
-.headerfull div a:last-of-type {
-	font-size: var(--fontLarger);
+.headerDeskNav a:last-of-type {
+	max-width: unset;
+	min-width: unset;
+	font-size: 1.25rem;
 	color: white;
 	width: 150px;
 	margin: -5px;
@@ -93,100 +246,24 @@ html {
 	background-color: var(--colorFernLeaf);
 }
 
-.headerfull div a:hover {
+.headerDeskNav a:hover {
 	background-color: var(--colorFreshMint);
 }
 
-.headerfull div a:last-of-type:hover {
+.headerDeskNav a:last-of-type:hover {
 	background-color: var(--colorDeepForest);
 }
 
-/* Velkommen */
-
-.velkommenHeader {
-	color: white;
-	font-size: 2rem;
-	font-weight: bold;
-	height: 80px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--colorFernLeaf);
-	margin-bottom: var(--mediumSpacer);
-}
-
-.velkommenBlock1 {
-	width: 100%;
-	padding: 0 var(--hugeSpacer);
-}
-
-.velkommenBlock1Sub {
-	padding: var(--smallSpacer) 0;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-.velkommenBlock1Sub p {
-	max-width: 60ch;
-	margin-bottom: var(--smallSpacer);
-}
-
-.velkommenBlock2 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: var(--mediumSpacer);
-	margin: var(--mediumSpacer) 0;
-}
-
-.velkommenBlock2Sub {
-	display: flex;
-	justify-content: space-evenly;
-	margin: var(--smallSpacer);
-}
-
-.velkommenBlock2Sub li {
-	margin: var(--tinySpacer);
-	max-width: 24ch;
-}
-
-.velkommenBlock3 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: var(--mediumSpacer) 0;
-}
-
-.velkommenBlock3Sub {
-	margin: var(--smallSpacer);
-}
-
-.velkommenBlock3Sub li {
-	margin: var(--tinySpacer);
-	max-width: 48ch;
-}
-
-/* Nyheder */
-/* Klub Aktiviteter */
-/* -- Træningsløb */
-/* -- Voksne/familier */
-/* -- Børn/unge */
-/* -- RSOK’kerne */
-/* -- Om O-kort */
-/* Praktisk Info */
-/* -- Kontakt */
-/* Indmeldelse */
-/* Links */
-
 /* Footer */
+
 footer {
 	color: white;
-	height: 220px;
+	height: 340px;
 	background-color: var(--colorFernLeaf);
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
+	align-items: center;
 	padding: var(--smallSpacer);
 }
 
@@ -198,24 +275,56 @@ footer > div {
 }
 
 footer > div * {
+	font-size: 0.75rem;
 	color: white;
-	margin: 0 var(--tinySpacer);
+	margin: 0 var(--microSpacer);
 }
 
 footer > div a:hover {
 	color: var(--colorClearSky);
 }
 
-.footerImgs {
-	display: flex;
-	justify-content: space-between;
-	border-radius: 0 0 5px 5px var(--colorClearSky);
+/* Media */
+
+@media screen and (min-width: 720px) {
+	.headerMobNav {
+		display: none;
+	}
+	.headerDeskNav {
+		display: flex;
+	}
+	.velkommenHeader {
+		height: 80px;
+	}
 }
 
-/* Media 
+@media screen and (min-width: 1024px) {
+	.velkommenBlock1Sub {
+		flex-direction: row;
+	}
+	.velkommenBlock2Sub {
+		display: flex;
+		margin: var(--tinySpacer);
+	}
+	footer {
+		height: 220px;
+		flex-direction: row;
+		align-items: unset;
+	}
+}
+
 @media screen and (min-width: 1281px) {
+	body {
+		background-image: url("../images/main/bg.png");
+		background-color: var(--colorPaleStone);
+	}
 	.base {
+		background-color: white;
 		max-width: 1280px;
 		justify-self: center;
+		box-shadow: 0 0 15px 1px black;
 	}
-}*/
+	footer > div * {
+		margin: 0 var(--tinySpacer);
+	}
+}
