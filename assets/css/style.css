@@ -6,16 +6,19 @@
 * {
 	box-sizing: border-box;
 	font-family: "Epilogue", sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
 html {
 	scroll-behavior: smooth;
-	min-width: 375px; /* TEST */
+	min-width: 400px; /* TEST */
 }
 
 :root {
 	/*Spacers*/
-	--tinySpacer: 5px;
+	--microSpacer: 5px;
+	--tinySpacer: 10px;
 	--smallSpacer: 25px;
 	--mediumSpacer: 50px;
 	--largeSpacer: 75px;
@@ -28,7 +31,128 @@ html {
 	--colorPaleStone: #f5f1e4; /* Sten grå */
 }
 
+.bgPaleStone {
+	background-color: var(--colorPaleStone);
+}
+
+/* Header */
+
+.headersticky {
+	position: sticky;
+	top: 0;
+	z-index: 2000;
+	height: 200px;
+}
+
+.headerfull {
+	height: 200px;
+	width: 100%;
+	background-image: url("../images/header/banner11.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+	gap: 1ch;
+	padding: var(--smallSpacer) var(--smallSpacer);
+}
+
+.headerfull img {
+	width: 100px;
+	height: 100px;
+}
+
+.headerfull div {
+	height: 2.5rem;
+	padding: 0 var(--microSpacer);
+	margin: var(--smallSpacer) 0 var(--largeSpacer);
+	border-radius: var(--smallSpacer);
+	background-color: var(--colorPaleStone);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headerfull div a {
+	font-size: 0.9rem;
+	color: black;
+	max-width: 15ch;
+	min-width: 13ch;
+	text-align: center;
+	text-decoration: none;
+	padding: var(--tinySpacer);
+	border-radius: var(--smallSpacer);
+}
+
+.headerfull div a:last-of-type {
+	font-size: var(--fontLarger);
+	color: white;
+	width: 150px;
+	margin: -5px;
+	padding-top: 15px;
+	border-radius: var(--smallSpacer);
+	background-color: var(--colorFernLeaf);
+}
+
+.headerfull div a:hover {
+	background-color: var(--colorFreshMint);
+}
+
+.headerfull div a:last-of-type:hover {
+	background-color: var(--colorDeepForest);
+}
+
 /* Velkommen */
+
+.velkommenHeader {
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--colorFreshMint);
+	margin-bottom: var(--mediumSpacer);
+}
+
+.velkommenBlock1 {
+	width: 100%;
+	padding: 0 var(--hugeSpacer);
+}
+
+.velkommenBlock1Sub {
+	padding: var(--smallSpacer) 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.velkommenBlock1Sub p {
+	max-width: 60ch;
+	margin-bottom: var(--smallSpacer);
+}
+
+.velkommenBlock2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--smallSpacer);
+	padding-top: var(--mediumSpacer);
+	margin: var(--mediumSpacer) 0;
+}
+
+.velkommenBlock2Sub {
+	display: flex;
+	justify-content: space-evenly;
+	margin: var(--smallSpacer);
+}
+
+.velkommenBlock2Sub li {
+	margin: var(--tinySpacer);
+	max-width: 24ch;
+}
+
 /* Nyheder */
 /* Klub Aktiviteter */
 /* -- Træningsløb */
@@ -43,10 +167,10 @@ html {
 /* -- Kontingent */
 /* Links */
 
-/* Media */
+/* Media 
 @media screen and (min-width: 1281px) {
 	.base {
 		max-width: 1280px;
 		justify-self: center;
 	}
-}
+}*/
