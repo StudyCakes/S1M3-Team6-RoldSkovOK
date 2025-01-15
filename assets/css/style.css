@@ -163,9 +163,39 @@ html {
 /* Praktisk Info */
 /* -- Kontakt */
 /* Indmeldelse */
-/* -- Nyt Medlem */
-/* -- Kontingent */
 /* Links */
+
+/* Footer */
+footer {
+	color: white;
+	height: 220px;
+	background-color: var(--colorFernLeaf);
+	display: flex;
+	justify-content: space-evenly;
+	padding: var(--smallSpacer);
+}
+
+footer > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: var(--smallSpacer);
+}
+
+footer > div * {
+	color: white;
+	margin: 0 var(--tinySpacer);
+}
+
+footer > div a:hover {
+	color: var(--colorClearSky);
+}
+
+.footerImgs {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 0 0 5px 5px var(--colorClearSky);
+}
 
 /* Media 
 @media screen and (min-width: 1281px) {
