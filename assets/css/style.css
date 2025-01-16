@@ -313,18 +313,21 @@ footer > div a:hover {
 	}
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
+	footer > div * {
+		margin: 0 var(--tinySpacer);
+	}
+}
+
+@media screen and (min-width: 1601px) {
 	body {
 		background-image: url("../images/main/bg.png");
 		background-color: var(--colorPaleStone);
 	}
 	.base {
 		background-color: white;
-		max-width: 1280px;
+		max-width: 1600px;
 		justify-self: center;
 		box-shadow: 0 0 15px 1px black;
-	}
-	footer > div * {
-		margin: 0 var(--tinySpacer);
 	}
 }
