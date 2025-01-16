@@ -76,22 +76,26 @@ html {
 	margin-bottom: var(--mediumSpacer);
 }
 
+
+
 .velkommenBlock1 {
 	width: 100%;
-	padding: 0 var(--smallSpacer);
+	padding: 0 var(--smallSpacer);	
 }
 
 .velkommenBlock1Sub {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: top;
 	padding: var(--smallSpacer) 0;
+
 }
 
 .velkommenBlock1Sub p {
 	max-width: 60ch;
-	margin-bottom: var(--smallSpacer);
+	margin: var(--smallSpacer);
+	margin-top: 0;
 }
 
 .velkommenBlock2 {
@@ -130,11 +134,15 @@ html {
 
 .velkommenBlock3Sub2 {
 	margin: var(--smallSpacer);
+	
 }
 
 .velkommenBlock3Sub2 li {
-	margin: var(--tinySpacer);
-	max-width: 48ch;
+	margin: 2rem;
+	width: 30rem;
+}
+.velkommenBlock3Sub3{
+	margin: 1rem;
 }
 
 /* Nyheder */
@@ -207,7 +215,8 @@ html {
 	display: grid;
 	grid-template-columns: repeat(2, 120px);
 	justify-content: center;
-	padding: var(--tinySpacer);
+	padding: var(--smallSpacer);
+
 }
 
 .signupBoxItem {
@@ -255,7 +264,7 @@ html {
 .headerfull {
 	height: 150px;
 	width: 100%;
-	background-image: url("../images/header/banner11.jpg");
+	background-image: url("../images/header/soeSkovOgFolkDerLoeber\ 1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -351,6 +360,7 @@ html {
 	text-decoration: none;
 	padding: var(--tinySpacer);
 	border-radius: var(--smallSpacer);
+	margin: 0.5rem;
 }
 
 .headerDeskNav a:last-of-type {
