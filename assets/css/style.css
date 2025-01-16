@@ -253,7 +253,7 @@ html {
 
 .headerDeskNav a {
 	color: black;
-	min-width: 7 ch;
+	min-width: 7ch;
 	text-align: center;
 	text-decoration: none;
 	padding: var(--tinySpacer);
