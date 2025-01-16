@@ -53,7 +53,7 @@ html {
 
 .velkommenBlock1 {
 	width: 100%;
-	padding: 0 var(--hugeSpacer);
+	padding: 0 var(--smallSpacer);
 }
 
 .velkommenBlock1Sub {
@@ -125,13 +125,6 @@ html {
 /* Links */
 
 /* Header */
-
-.headersticky {
-	position: sticky;
-	top: 0;
-	z-index: 2000;
-	height: 200px;
-}
 
 .headerfull {
 	height: 150px;
@@ -258,7 +251,7 @@ html {
 
 footer {
 	color: white;
-	height: 340px;
+	height: 375px;
 	background-color: var(--colorFernLeaf);
 	display: flex;
 	flex-direction: column;
@@ -287,6 +280,12 @@ footer > div a:hover {
 /* Media */
 
 @media screen and (min-width: 720px) {
+	.headerFull {
+		position: sticky;
+		top: 0;
+		z-index: 2000;
+		height: 200px;
+	}
 	.headerMobNav {
 		display: none;
 	}
