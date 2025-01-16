@@ -35,6 +35,10 @@ html {
 	background-color: var(--colorPaleStone);
 }
 
+.fontSmaller {
+	font-size: 0.625rem;
+}
+
 .fontSmall {
 	font-size: 0.75rem;
 }
@@ -156,6 +160,34 @@ html {
 /* -- RSOK’kerne */
 /* -- Om O-kort */
 /* Praktisk Info */
+
+.infoBlock1 {
+	width: 100%;
+	max-width: 720px;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-self: center;
+	padding: 0 var(--smallSpacer);
+	padding-bottom: var(--smallSpacer);
+}
+
+.infoBox {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-rows: auto;
+	padding: var(--smallSpacer) 0;
+}
+
+.infoBoxItem {
+	min-height: 30px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 var(--microSpacer);
+	border: 2px solid var(--colorFernLeaf);
+}
+
 /* -- Kontakt */
 /* Indmeldelse */
 
@@ -184,7 +216,7 @@ html {
 	display: flex;
 	align-items: center;
 	padding: 0 var(--microSpacer);
-	border: 2px solid var(--colorFernLeaf);
+	border: 3px solid var(--colorFernLeaf);
 }
 
 .signupBlock1Sub {
