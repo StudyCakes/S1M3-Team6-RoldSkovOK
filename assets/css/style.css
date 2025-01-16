@@ -283,13 +283,13 @@ html {
 /* Footer */
 
 footer {
-	height: 375px;
+	height: 250px;
 	background-color: var(--colorClearSky);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: var(--smallSpacer);
+	padding: var(--tinySpacer);
 }
 
 footer > div {
@@ -307,7 +307,7 @@ footer > div * {
 }
 
 footer > div a:hover {
-	box-shadow: 0 0 5px 5px white;
+	box-shadow: 0 0 5px 1px black;
 }
 
 /* Media */
@@ -337,6 +337,10 @@ footer > div a:hover {
 		font-weight: normal;
 		padding: 0 var(--tinySpacer);
 	}
+	/* Footer */
+	.footerSub {
+		display: unset;
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -351,12 +355,6 @@ footer > div a:hover {
 		height: 220px;
 		flex-direction: row;
 		align-items: unset;
-	}
-}
-
-@media screen and (min-width: 1280px) {
-	footer > div * {
-		margin: 0 var(--tinySpacer);
 	}
 }
 
