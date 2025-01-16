@@ -35,6 +35,27 @@ html {
 	background-color: var(--colorPaleStone);
 }
 
+.fontSmall {
+	font-size: 0.75rem;
+}
+.fontMedium {
+	font-size: 1rem;
+}
+.fontLarge {
+	font-size: 1.25rem;
+}
+
+.fontNormal {
+	font-weight: normal;
+}
+.fontBold {
+	font-weight: bold;
+}
+
+.vertMarginSmall {
+	margin: var(--smallSpacer) 0;
+}
+
 /* Velkommen */
 
 .velkommenHeader {
@@ -125,7 +146,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--colorFernLeaf);
-	margin-bottom: var(--mediumSpacer);
+	margin-bottom: var(--smallSpacer);
 }
 
 /* Klub Aktiviteter */
@@ -137,6 +158,46 @@ html {
 /* Praktisk Info */
 /* -- Kontakt */
 /* Indmeldelse */
+
+.signupBlock1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 var(--smallSpacer);
+	padding-bottom: var(--smallSpacer);
+}
+
+.signupBlock1:last-child {
+	margin: var(--smallSpacer) 0;
+}
+
+.signupBox {
+	display: grid;
+	grid-template-columns: repeat(2, 120px);
+	justify-content: center;
+	padding: var(--tinySpacer);
+}
+
+.signupBoxItem {
+	min-height: 30px;
+	max-width: 200px;
+	display: flex;
+	align-items: center;
+	padding: 0 var(--microSpacer);
+	border: 2px solid var(--colorFernLeaf);
+}
+
+.signupBlock1Sub {
+	display: flex;
+	align-items: center;
+	gap: var(--tinySpacer);
+	margin: var(--tinySpacer);
+}
+
+.signupBlock1Sub h2 {
+	padding: var(--tinySpacer) 0;
+}
+
 /* Links */
 
 .linkBox {
@@ -154,7 +215,7 @@ html {
 	display: flex;
 	align-items: center;
 	padding: 0 var(--microSpacer);
-	border: 1px solid black;
+	border: 2px solid var(--colorFernLeaf);
 }
 
 /* Header */
@@ -328,6 +389,28 @@ footer > div a:hover {
 	.velkommenHeader {
 		height: 80px;
 	}
+	/* Indmeldelse */
+	.signupBlock1 {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+	.signupHidden {
+		display: unset;
+	}
+	.signupHidden img {
+		margin: var(--largeSpacer) 0;
+	}
+	.signupBlock1 > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: 1;
+		padding: 0 var(--tinySpacer);
+	}
+
+	.signupBoxItem {
+		padding: 0 var(--tinySpacer);
+	}
 	/* Links */
 	.linkBox {
 		grid-template-columns: repeat(2, 320px);
@@ -355,6 +438,11 @@ footer > div a:hover {
 		height: 220px;
 		flex-direction: row;
 		align-items: unset;
+	}
+	.signupBlock1 > div:first-child,
+	.signupBlock1 > div:last-child {
+		flex: 1;
+		padding: 0 var(--smallSpacer);
 	}
 }
 
