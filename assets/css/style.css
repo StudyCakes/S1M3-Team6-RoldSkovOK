@@ -76,11 +76,9 @@ html {
 	margin-bottom: var(--mediumSpacer);
 }
 
-
-
 .velkommenBlock1 {
 	width: 100%;
-	padding: 0 var(--smallSpacer);	
+	padding: 0 var(--smallSpacer);
 }
 
 .velkommenBlock1Sub {
@@ -89,7 +87,11 @@ html {
 	justify-content: space-evenly;
 	align-items: top;
 	padding: var(--smallSpacer) 0;
+}
 
+.velkommenBlock1Sub figure {
+	display: flex;
+	justify-content: center;
 }
 
 .velkommenBlock1Sub p {
@@ -134,14 +136,13 @@ html {
 
 .velkommenBlock3Sub2 {
 	margin: var(--smallSpacer);
-	
 }
 
 .velkommenBlock3Sub2 li {
 	margin: 2rem;
 	width: 30rem;
 }
-.velkommenBlock3Sub3{
+.velkommenBlock3Sub3 {
 	margin: 1rem;
 }
 
@@ -159,6 +160,41 @@ html {
 	justify-content: center;
 	background-color: var(--colorFernLeaf);
 	margin-bottom: var(--smallSpacer);
+}
+
+.nyhedBlock1 {
+	width: 90%;
+	min-width: 240px;
+	max-width: 520px;
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	margin: var(--smallSpacer) 0;
+	padding-bottom: var(--smallSpacer);
+	border: 5px solid var(--colorFernLeaf);
+}
+
+.nyhedSplit {
+	margin-top: var(--mediumSpacer);
+}
+
+.nyhedHeader {
+	color: white;
+	line-height: 1.5rem;
+	min-height: 20px;
+	padding: var(--tinySpacer);
+	padding-top: 3px;
+	background-color: var(--colorFernLeaf);
+}
+
+.nyhedText {
+	min-height: 75px;
+	padding: var(--tinySpacer);
+	margin-bottom: var(--tinySpacer);
+}
+
+.nyhedFollower {
+	padding: 0 var(--tinySpacer);
 }
 
 /* Klub Aktiviteter */
@@ -216,7 +252,6 @@ html {
 	grid-template-columns: repeat(2, 120px);
 	justify-content: center;
 	padding: var(--smallSpacer);
-
 }
 
 .signupBoxItem {
@@ -264,13 +299,13 @@ html {
 .headerfull {
 	height: 150px;
 	width: 100%;
-	background-image: url("../images/header/soeSkovOgFolkDerLoeber\ 1.png");
+	background-image: url("../images/header/soeSkovOgFolkDerLoeber1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: space-between;
 	gap: 1ch;
-	padding: var(--smallSpacer) var(--smallSpacer);
+	padding: var(--smallSpacer) var(--tinySpacer);
 }
 
 .headerfull img {
@@ -360,7 +395,6 @@ html {
 	text-decoration: none;
 	padding: var(--tinySpacer);
 	border-radius: var(--smallSpacer);
-	margin: 0.5rem;
 }
 
 .headerDeskNav a:last-of-type {
@@ -370,6 +404,7 @@ html {
 	color: white;
 	width: 150px;
 	margin: -5px;
+	margin-left: 5px;
 	padding-top: 15px;
 	border-radius: var(--smallSpacer);
 	background-color: var(--colorFernLeaf);
@@ -430,6 +465,11 @@ footer > div a:hover {
 	}
 	.velkommenHeader {
 		height: 80px;
+	}
+	/* Nyheder */
+	.nyhedBlock2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
 	/* Indmeldelse */
 	.signupBlock1 {
