@@ -113,6 +113,21 @@ html {
 }
 
 /* Nyheder */
+
+.basicHeader {
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	height: 75px;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--colorFernLeaf);
+	margin-bottom: var(--mediumSpacer);
+}
+
 /* Klub Aktiviteter */
 /* -- Træningsløb */
 /* -- Voksne/familier */
@@ -123,6 +138,24 @@ html {
 /* -- Kontakt */
 /* Indmeldelse */
 /* Links */
+
+.linkBox {
+	display: grid;
+	grid-template-columns: repeat(2, 180px);
+	justify-content: center;
+	padding: var(--smallSpacer) 0;
+}
+
+.linkBoxItem {
+	font-size: 0.75rem;
+	font-weight: bold;
+	min-height: 60px;
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+	padding: 0 var(--microSpacer);
+	border: 1px solid black;
+}
 
 /* Header */
 
@@ -250,9 +283,8 @@ html {
 /* Footer */
 
 footer {
-	color: white;
 	height: 375px;
-	background-color: var(--colorFernLeaf);
+	background-color: var(--colorClearSky);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -264,17 +296,18 @@ footer > div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: var(--smallSpacer);
+	margin: var(--tinySpacer);
 }
 
 footer > div * {
 	font-size: 0.75rem;
-	color: white;
+	line-height: 1.25rem;
+	color: black;
 	margin: 0 var(--microSpacer);
 }
 
 footer > div a:hover {
-	color: var(--colorClearSky);
+	box-shadow: 0 0 5px 5px white;
 }
 
 /* Media */
@@ -294,6 +327,15 @@ footer > div a:hover {
 	}
 	.velkommenHeader {
 		height: 80px;
+	}
+	/* Links */
+	.linkBox {
+		grid-template-columns: repeat(2, 320px);
+	}
+	.linkBoxItem {
+		font-size: 1rem;
+		font-weight: normal;
+		padding: 0 var(--tinySpacer);
 	}
 }
 
