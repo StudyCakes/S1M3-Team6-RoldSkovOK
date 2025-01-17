@@ -663,11 +663,15 @@ footer > div a:hover {
 	.aktiviteterBlock1 {
 		flex-direction: row;
 	}
-	.aktiviteterBlock2,
-	.aktiviteterBlock4 {
+	.aktiviteterBlock2 {
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	.aktiviteterBlock4 {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: 1fr 1fr 2fr 1fr;
 	}
 	.aktiviteterBlock2 p,
 	.aktiviteterBlock3 p,
