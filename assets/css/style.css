@@ -152,11 +152,11 @@ html {
 }
 
 .velkommenBlock3Sub2 li {
-	margin: 2rem;
-	width: 30rem;
+	margin: var(--smallSpacer);
+	max-width: 48ch;
 }
 .velkommenBlock3Sub3 {
-	margin: 1rem;
+	margin: var(--smallSpacer);
 }
 
 /* Nyheder */
@@ -784,7 +784,7 @@ footer > div a:hover {
 	}
 	.base {
 		background-color: white;
-		max-width: 1600px;
+		width: 1600px;
 		justify-self: center;
 		box-shadow: 0 0 15px 1px black;
 	}
